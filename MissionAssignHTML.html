@@ -1,0 +1,74 @@
+<!--Miguel Salcedo-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+     <!--Loads UAT Space Logo-->
+    <img src="Logo.jpg"><br>
+    <h1>UAT SPACE PROGRAM</h1>
+     <!--running the docwriteTest file-->
+     <script src="code.js"></script>
+    <script>
+        document.write("This is a test of the document.write funtion");
+
+    </script>
+    <p>
+        This is a test of the paragraph tags.
+    </p>
+    <button onclick="btrblastOff();">Start</button>
+    <button>Stop</button> <br>
+    <p id="countdowntimer"> Waiting to start...</p>
+    <br>
+    <!-- .... -->
+    <script>
+        document.write("Simple Craps")
+        document.write("<br/>")
+        // starts a die game
+        play();
+        function StartBlastoffSequence() {
+            var currTime = 50;
+
+            for (var i = 0; i < 50; i = i + 1) { }
+            setTimeout(function () {
+
+                if (currTime > 25) {
+                    document.getElementById("BlastoffDisplay").innerHTML = currTime;
+                } else {
+                    document.getElementById("BlastoffDisplay").innerHTML =
+                        "Warning Less than 1/2 way to launch, time left = " + currTime;
+                }
+                currTime = currTime - 1;
+            }, 1000 * i)
+
+        }
+
+
+
+        setTimeout(function () {
+            document.getElementById("BlastoffDisplay").innerHTML = "Blast off";
+        }, 50000);
+
+
+    </script>
+    <br>
+<!-- .... -->
+    <button onclick="playCraps();">Play Craps!</button>
+    <p id="die1Res">Die 1...</p>
+    <p id="die2Res">Die 2...</p>
+    <p id="sumRes">Sum...</p>
+    <p id="finalRes">Win, lose or draw......</p>
+</body>
+
+
+</html>
